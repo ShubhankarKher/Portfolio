@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porous Irrigation - Shubhankar Kher</title>
+    <link rel="stylesheet" href="shubhankar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="index.html" style="color: inherit; text-decoration: none;">Shubhankar's Portfolio</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2>Porous Irrigation</h2>
+            <div class="project-content">
+                <div class="project-description">
+                    <p>This project focuses on a novel irrigation technique designed to provide efficient water distribution while minimizing waste. It utilizes porous pipes embedded within the soil, enabling slow, uniform watering.</p>
+                    
+                    <div class="project-details">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Efficient use of water for agricultural purposes</li>
+                            <li>Reduces water wastage through precision delivery to plant roots</li>
+                            <li>Cost-effective and sustainable compared to traditional irrigation systems</li>
+                            <li>Easy to install and maintain with low energy consumption</li>
+                            <li>Improves crop yield while being environmentally friendly</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-images">
+                    <div class="project-image">
+                        <img src="images/model.png" alt="Porous Irrigation Diagram" loading="lazy">
+                        <p>System Diagram</p>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/NCSC.jpg" alt="Project Certificate" loading="lazy">
+                        <p>Project Recognition</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2024 Shubhankar Kher. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

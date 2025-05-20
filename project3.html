@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Growth Monitoring System - Shubhankar Kher</title>
+    <link rel="stylesheet" href="shubhankar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="color: inherit; text-decoration: none;">Shubhankar's Portfolio</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2>Plant Growth Monitoring System</h2>
+            <div class="project-content">
+                <div class="project-description">
+                    <p>This project involves developing a simple yet effective system to monitor and optimize the growth of plants by tracking environmental factors like moisture, light, and temperature. The system provides valuable insights into plant needs, allowing for better management and higher crop yields.</p>
+                    
+                    <div class="project-details">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Real-time monitoring of soil moisture, light intensity, and temperature</li>
+                            <li>User-friendly interface for data visualization</li>
+                            <li>Automated alerts for optimal plant care</li>
+                            <li>Affordable and easy to set up</li>
+                            <li>Water and resource conservation through precise monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-images">
+                    <div class="project-image">
+                        <img src="images/plant1.png" alt="Plant Monitoring System Diagram" loading="lazy">
+                        <p>System Architecture</p>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/plant2.png" alt="Plant Monitoring System Setup" loading="lazy">
+                        <p>Implementation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2024 Shubhankar Kher. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>

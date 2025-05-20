@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folding Table - Shubhankar Kher</title>
+    <link rel="stylesheet" href="shubhankar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --primary-color: #041E42; /* Deep Blue */
+            --secondary-color: #DA291C; /* Red */
+            --background-light: #F4F4F4;
+            --text-light: #FFFFFF;
+            --text-dark: #000000;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+        }
+
+        header {
+            background: var(--primary-color);
+            color: var(--text-light);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+
+        .section {
+            padding: 50px;
+            text-align: center;
+            background: var(--background-light);
+        }
+
+        .alternate {
+            background: var(--primary-color);
+            color: var(--text-light);
+        }
+
+        .project-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .project-images img {
+            max-width: 100%;
+            height: auto;
+            max-width: 700px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            text-align: left;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.8;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: var(--secondary-color);
+            color: var(--text-light);
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .back-link:hover {
+            background: #B22222;
+        }
+
+        .project-images p {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html" style="color: inherit; text-decoration: none;">Shubhankar's Portfolio</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2>Folding Table</h2>
+            <div class="project-content">
+                <div class="project-description">
+                    <p>This project focuses on the design and creation of a folding table that is space-efficient, portable, and practical. It utilizes a simple but sturdy mechanism for quick folding and unfolding, making it ideal for small spaces and multi-purpose use.</p>
+                    
+                    <div class="project-details">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Quick-fold mechanism for easy setup and storage</li>
+                            <li>Lightweight yet durable construction for portability</li>
+                            <li>Space-saving design suitable for apartments and small offices</li>
+                            <li>Affordable and simple to manufacture</li>
+                            <li>Versatile usage for temporary setups and events</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-images">
+                    <div class="project-image">
+                        <img src="images/table.jpg" alt="Folding Table Design" loading="lazy">
+                        <p>Design Prototype</p>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/folding.png" alt="Folding Mechanism" loading="lazy">
+                        <p>Folding Mechanism</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2024 Shubhankar Kher. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+
+</html>
+
